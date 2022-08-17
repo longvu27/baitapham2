@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = ['a','b','c','d','e','a','f','g','h','i'];
+  let a = prompt('nhập kí tự bất kì');
+  let dem = 0;
+
+
+  function checkWord() {
+      for (let i = 0; i < arr.length; i++) {
+          if (a == arr[i]) {
+              dem+=1;
+          }
+      }
+      if (dem != 0) {
+          return dem; //lưu lại giá trị dem
+      } else {
+          return -1; //lưu lại gia tri -1
+      }
+  }
+  document.write(checkWord(a)); //trả ra kết quả lưu lại sau khi thực hiện cái hàm này
+  checkWord(a)
+</script>
+</body>
+</html>
